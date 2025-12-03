@@ -29,4 +29,4 @@ if __name__ == "__main__":
     for tuple in int_tuples:
         password += check_ids(tuple)
 
-    print(f"Completato. La password è: {password}")
+    print(f"Password: {password}")

@@ -18,5 +18,5 @@ for line in file:
         if current_value == 0:
             password = password + 1
 
-print(f"Completato. La password è: {password}" )
+print(f"Password: {password}" )
 

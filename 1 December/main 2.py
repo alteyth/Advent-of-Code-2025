@@ -2,7 +2,7 @@ N = 100
 password = 0
 current_value = 50
 
-with open("./1 Dicembre/Puzzle 1.txt", "r", encoding="utf-8") as f:
+with open("./1 December/Puzzle 1.txt", "r", encoding="utf-8") as f:
     for raw in f:
         line = raw.strip()
 

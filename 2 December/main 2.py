@@ -1,20 +1,18 @@
-def check_ids(id_tuple: tuple)-> int:   
+def check_ids(id_tuple: tuple) -> int:   
     id_range = range(id_tuple[0], id_tuple[1] + 1)
-    value = 0;
+    value = 0
     for id in id_range:
-        length = len(str(id))
-        if length % 2 == 0:
-            str_id = str(id)
-            factor = int(length / 2)
-            first_half = [str_id[x] for x in range(0, factor)]
-            second_half = [str_id[x] for x in range(factor, length)]
-            if first_half == second_half:
-                value += id
+        str_value = str(id)
+        str_conc = str(id) + str(id)
+        str_conc = str_conc[1:]
+        str_conc = str_conc[:-1]
+        if str(id) in str_conc:
+            value += id
     return value
-                
+             
 
 if __name__ == "__main__":
-    file = open("./2 Dicembre/input.txt")
+    file = open("./2 December/input.txt")
     full_string = file.read()
     range_list = full_string.split(",")
 

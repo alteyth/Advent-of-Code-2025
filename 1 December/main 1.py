@@ -1,5 +1,5 @@
 #Apertura File
-file = open("./1 December/Puzzle 1.txt", "r")
+file = open("./1 December/input.txt", "r")
 password = 0
 current_value = 50
 

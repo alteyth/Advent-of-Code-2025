@@ -1,9 +1,7 @@
 def mult(i: int) -> int:
     amount = 1
     for x in range(rows - 1):
-        # print(f"Number: {numbers[x][i]}")
         amount *= numbers[x][i]
-        # print(f"Amount {amount} dell'iterazione {x}-esima della i = {i}")
     return amount
 
 def add(i: int) -> int:
